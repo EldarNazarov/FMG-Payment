@@ -1,0 +1,35 @@
+#error {
+  .name_block {
+    margin-bottom: 35px;
+  }
+
+  .error_text {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 80px;
+
+    @media (max-width: 767.98px) {
+      margin-bottom: 65px;
+    }
+
+    @media (max-width: 575.98px) {
+      font-size: 24px;
+    }
+  }
+  .close_block {
+    @media (max-width: 991.98px) {
+      margin-top: 115px;
+    }
+  }
+
+
+  .blue_side {
+    @media (min-width: 991.98px) {
+      justify-content: center;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      min-height: 600px;
+    }
+  }
+}

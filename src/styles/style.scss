@@ -1,0 +1,104 @@
+// @import '~font-awesome/css/font-awesome.css';
+@import "~@fortawesome/fontawesome-free/css/all.css";
+@import "vendors/bootstrap";
+@import "molecules/sprite";
+@import "molecules/sprite";
+
+@import "./font/stylesheet.css";
+@import "fmg/common/inputs";
+@import "fmg/pages/index";
+@import "fmg/pages/online_pay";
+@import "fmg/pages/approve";
+@import "fmg/pages/error";
+
+button,
+input,
+textarea {
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+a {
+  cursor: pointer;
+  &:hover {
+    text-decoration: none;
+  }
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+form,
+label {
+  margin: 0;
+}
+
+label {
+  display: block;
+}
+
+body {
+  font-family: "Lato";
+  font-style: normal;
+  font-weight: normal;
+  line-height: normal;
+  letter-spacing: normal;
+  position: relative;
+
+  &:after {
+    content: "";
+    position: absolute;
+    width: 135px;
+    height: 100%;
+    right: 0;
+    top: 0;
+    background: url(/assets/decore.svg);
+    z-index: -1;
+
+    @media (max-width: 991.98px) {
+      content: unset;
+    }
+  }
+
+  .bg_blue {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100px;
+    background: #00b7ce;
+
+    @media (max-width: 991.98px) {
+      display: none;
+    }
+  }
+
+  .left-side {
+    @media (max-width: 991.98px) {
+      background: #00b7ce;
+      position: relative;
+
+      &:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        height: 100%;
+        background: #00b7ce;
+        width: 1000px;
+        z-index: -1;
+      }
+    }
+  }
+
+  .page-container {
+    @media (max-width: 991.98px) {
+      overflow-x: hidden;
+    }
+  }
+}

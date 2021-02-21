@@ -1,0 +1,130 @@
+<!--[if lt IE 7]><html class="no-js ie6 oldie" lang="en"><![endif]-->
+<!--[if IE 7]><html class="no-js ie7 oldie" lang="en"><![endif]-->
+<!--[if IE 8]><html class="no-js ie8 oldie" lang="en"><![endif]-->
+<!--[if IE 9]><html class="no-js ie9" lang="en"><![endif]-->
+<!--[if gt IE 9]><!-->
+<html class="no-js" lang="en">
+<!--<![endif]-->
+
+<head>
+
+  {{> common/head }}
+
+</head>
+
+<body class="blue_lg">
+
+  {{!-- {{> common/header }} --}}
+
+  <div class="bg_blue"></div>
+
+  <main>
+    <section id="index" class="page-container">
+
+
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4 left-side">
+            <div class="logo">
+              <img src="../assets/fmg_logo.svg" alt="">
+            </div>
+          </div>
+
+
+          <div class="col-lg-8 blue_side">
+
+            <form action="" id="form_feed">
+
+              <h1>ONLAYN ÖDƏNİŞ</h1>
+
+              <div class="input_block">
+                <label for="">Müştəri məlumatlarınızı daxil edin</label>
+
+                <div class="input_wrapper">
+                  <input type="text" placeholder="Ad">
+                  <input type="text" placeholder="Soyad">
+                </div>
+
+              </div>
+
+              <div class="input_block invalid_input">
+
+                <label for="">Müqavilə nömrəsi</label>
+                <input type="text" placeholder="Müqavilə nömrəsini daxil edin">
+                <p class="error-msg ">Müqavilə nömrəsini yoxlayın</p>
+              </div>
+
+              <div class="radio_wrapper">
+                <label for="">Kompleks</label>
+
+                <div class="radio_block">
+
+                  <input type="radio" id="XR" name="address" checked>
+                  <label for="XR">Xəzri Residence</label>
+
+                </div>
+
+                <div class="radio_box">
+                  <div class="radio_block">
+
+                    <input type="radio" id="XH" name="address">
+                    <label for="XH">Hillside Residence</label>
+
+                  </div>
+
+                  <div class="radio_block">
+
+                    <input type="radio" id="GR" name="address">
+                    <label for="GR">Gumush Residence</label>
+
+                  </div>
+
+                  <div class="radio_block">
+
+                    <input type="radio" id="UH" name="address">
+                    <label for="UH">Ü.Hacıbəyli küç. 57 (Azinco)</label>
+
+                  </div>
+
+
+
+                  <div class="radio_block">
+
+                    <input type="radio" id="ZE" name="address">
+                    <label for="ZE">Z.Əliyeva küç. 53</label>
+
+                  </div>
+
+
+                </div>
+
+
+                <div class="radio_block">
+
+                  <input type="radio" id="GPP" name="address">
+                  <label for="GPP">Grand Park Plaza (Səməd Vurğun küç. 79A)</label>
+
+                </div>
+
+
+              </div>
+
+
+
+              <button>Davam et</button>
+
+            </form>
+
+
+          </div>
+        </div>
+      </div>
+
+    </section>
+  </main>
+
+  {{> common/footer }}
+
+</body>
+
+</html>
